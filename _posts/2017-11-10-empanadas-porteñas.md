@@ -8,7 +8,7 @@ featured_image: /uploads/ronald-cuyan-434484-unsplash.jpg
 author: Natasha Joann
 ingredients_html:
 directions_html:
-author_image: /uploads/d1592781ca54eb9a9b135de51e2c9d3b-1.jpg
+author_image: /uploads/screen-shot-2018-11-11-at-9-48-14-pm.png
 ---
 
 ## {{page.heading}}
