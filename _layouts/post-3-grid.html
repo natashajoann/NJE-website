@@ -1,33 +1,29 @@
 ---
-layout
+layout: default
 ---
 
 <!-- - - - -  BLOG POST SECTION  - - -   -->
 <section class="grid">
 <div class="col-5 blog-post2">
   <h3> {{page.heading}} </h3>
-  <h5> Natasha Joann Verdon </h5>
-  <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum impedit reprehenderit. Deserunt excepturi doloremque quaerat. Placeat dolorem error sapiente voluptate quos vel, sed eius quidem odit unde impedit dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis suscipit doloremque deserunt, explicabo soluta qui tenetur facere odio, illo molestiae quibusdam pariatur? Adipisci, rerum quasi quidem maxime quia repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque soluta hic repudiandae? Esse libero necessitatibus ullam earum vel. Tempora quibusdam similique facilis! Mollitia sequi ipsum illo, facere impedit aliquid.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe earum impedit reprehenderit. Deserunt excepturi doloremque quaerat. Placeat dolorem error sapiente voluptate quos vel, sed eius quidem odit unde impedit dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis suscipit doloremque deserunt, explicabo soluta qui tenetur facere odio, illo molestiae quibusdam pariatur? Adipisci, rerum quasi quidem maxime quia repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque soluta hic repudiandae? Esse libero necessitatibus ullam earum vel. Tempora quibusdam similique facilis!
-  </p>
+  <!-- ASK ABOUT THIS -->
+  <h5> {{page.author}} </h5>
+
+  {{content}}
 </div>
 
 <div class="col-3 author-img2">
-  <img src="https://loremflickr.com/320/240" />
+  {% for item in page.author_image %}
+  <img src="{{item}}" />
   <br>
-  <img src="https://loremflickr.com/320/240" />
+  {% endfor %}
 </div>
 
 <div class="col-4 recipe-box2">
   <h3> Empanadas Porteñas </h3>
     <div class="ingredients">
       <h4> Ingredients </h4> <br>
-       3 Chicken breast, skin removed <br> 12 cups water <br> 3 ears fresh corn, cut into 2 pieces <br> ¼ teaspoon salt <br> Pepper to taste <br> 2 chicken bouillon cubes <br> 3 scallions <br> 2 garlic cloves, minced <br> 3 tablespoon chopped cilantro
-       <br>
-      <h4> Directions </h4>
-      1. In a large pot, place the chicken, corn, chicken bouillon, cilantro, scallions, garlic, salt and pepper. Add the water and bring to a boil, then reduce heat to medium and cook for about 35 to 40 minutes, until chicken is cooked and tender. Remove the chicken and set aside. <br>
-      2. Continue cooking the corn for 30 more minutes. Discard green onion and add red potatoes, white potatoes, and the guacas. Cook for 30 more minutes. <br>
-      3. Uncover and add the frozen papa criolla and simmer for 15 to 20 minutes, season with salt and pepper.<br>
-      4. Cut the chicken meat into small pieces and return to the pot. Serve the Ajiaco hot with capers and heavy cream on the side.<br>
+       {{page.ingredients_html}}
   </div>
 </div>
 </section>

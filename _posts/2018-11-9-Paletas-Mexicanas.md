@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-3-grid
 title: Paletas Mexicanas
 description: This is where I will have a description
 featured_image: https://loremflickr.com/320/240
