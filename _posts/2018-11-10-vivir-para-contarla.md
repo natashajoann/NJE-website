@@ -2,7 +2,7 @@
 layout: post
 title: Vivir Para Contarla
 description: This is where I will have a description
-featured-image: 'https://loremflickr.com/320/240'
+featured_image: https://loremflickr.com/320/240
 author: Natasha Joann
 ---
 
