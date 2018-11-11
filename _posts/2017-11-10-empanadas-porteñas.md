@@ -4,11 +4,11 @@ title: Empanadas Porteñas
 heading: Braving the Silver Sun
 recipe: Chicken Empanadas
 description: This is where I will have a description
-featured_image: /uploads/d1592781ca54eb9a9b135de51e2c9d3b.jpg
+featured_image: /uploads/ronald-cuyan-434484-unsplash.jpg
 author: Natasha Joann
 ingredients_html:
 directions_html:
-author_image:
+author_image: /uploads/d1592781ca54eb9a9b135de51e2c9d3b-1.jpg
 ---
 
 ## {{page.heading}}
