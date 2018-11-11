@@ -13,29 +13,29 @@
 <body>
   <!--  - - - - - - - - HEADER SECTION - - - - - - - - - - - -->
   <header class="grid">
-    <h1 class="col-12 centered"> Nash. Jo Eats </h1>
+    <div class="col-12"><h1 class="centered"> Nash. Jo Eats </h1></div>
     <!-- YOU WANT TO ADD BURGER MENU FOR MOBILE VERSION -->
     <div class="grid home-menu">
-      <div class="col-2"> <a href="#">Home</a> </div>
+      <div class="col-2"> <a class="menu-button" href="#">Home</a> </div>
       <!-- add link for searching -->
-      <div class="col-2"> <a href="...">Places</a> </div>
-      <div class="col-2"> <a href="...">People</a> </div>
+      <div class="col-2"> <a class="menu-button" href="...">Places</a> </div>
+      <div class="col-2"> <a class="menu-button" href="...">People</a> </div>
       <!-- would this be the a href="people.html" to get to a page where there are all the authors/story people -->
-      <div class="col-2"> <a href="...">Recipes</a> </div>
-      <div class="col-2"> <a href="...">About</a> </div>
-      <div class="col-2"> <a href="#">Search</a> </div>
+      <div class="col-2"> <a class="menu-button" href="...">Recipes</a> </div>
+      <div class="col-2"> <a class="menu-button" href="...">About</a> </div>
+      <div class="col-2"> <a class="menu-button" href="#">Search</a> </div>
     </div>
 
-    <div class="col-2"></div>
+    <div class="col-1"></div>
 
-    <div class="col-10"><hr></div>
+    <div class="col-11"><hr></div>
 </header>
 
 <!--  - - - - - - CONTENT GOES HERE - - - -  - -->
 <body>
 <!-- - - - - - - -  Big banner image - - - - - - - - - -->
-    <section class="header-img">
-    <div class="title-img"> </div>
+<section class="header-img">
+  <div class="title-img"> </div>
 <!-- - - - - - - - -  - -  Features Section - - - - - - - - - -  -->
 <!-- Is there a way of automating this to update and show latest posts? -->
 <!-- In CSS: [class*article-box]{
@@ -45,48 +45,45 @@
   background-position: center;
 
 } -->
+</section>
 <section class="grid padded-5 features centered">
-  <div class="col-12 post-preview"><h2> Featured </h2></div>
+  <div class="col-12"><h2> Featured </h2></div>
 
   
-    <div class="col-6">
-      <img src=""/>
-      <h3> Colombian Ajiaco</h3>
+    <div class="col-6 post-preview">
+      <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
+        <p> This is where I will have a description</p>
+        <a href="/2018/11/10/vivir-para-contarla.html"> Read More </a>
+      </div></div>
+      <h3> Vivir Para Contarla</h3>
       <p> Natasha Joann</p>
-      <div class="overlay">
+      </div>
+  
+    <div class="col-6 post-preview">
+      <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
         <p> This is where I will have a description</p>
         <a href="/2018/11/10/Colombian-Ajiaco.html"> Read More </a>
-      </div>
+      </div></div>
+      <h3> Colombian Ajiaco</h3>
+      <p> Natasha Joann</p>
       </div>
   
-    <div class="col-6">
-      <img src=""/>
-      <h3> Paletas Mexicanas</h3>
-      <p> Natasha Joann</p>
-      <div class="overlay">
+    <div class="col-6 post-preview">
+      <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
         <p> This is where I will have a description</p>
         <a href="/2018/11/09/Paletas-Mexicanas.html"> Read More </a>
-      </div>
+      </div></div>
+      <h3> Paletas Mexicanas</h3>
+      <p> Natasha Joann</p>
       </div>
   
-    <div class="col-6">
-      <img src=""/>
+    <div class="col-6 post-preview">
+      <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
+        <p> This is where I will have a description</p>
+        <a href="/2017/11/10/empanadas-porte%C3%B1as.html"> Read More </a>
+      </div></div>
       <h3> Empanadas Porteñas</h3>
       <p> Natasha Joann</p>
-      <div class="overlay">
-        <p> This is where I will have a description</p>
-        <a href="/2017/11/10/Empanadas-Porte%C3%B1as.html"> Read More </a>
-      </div>
-      </div>
-  
-    <div class="col-6">
-      <img src=""/>
-      <h3> Sloppy Joes</h3>
-      <p> Natasha Joann</p>
-      <div class="overlay">
-        <p> This is where I will have a description</p>
-        <a href="/2017/08/10/SLoppy-Joes.html"> Read More </a>
-      </div>
       </div>
   
 
@@ -108,12 +105,12 @@
   <!-- ORIGINALLY THIS IS WHAT I DID: This div ^ give it nothing but padding so you can see the image behind it?? EVENTUALLY I JUST TOOK OUT THE SECOND DIV-->
 
 
-<!--  - - -  -FORM SECTION -- CHECK MAILCHIMP- - - -  - - - - -->
+<!--  - - -  -FORM SECTION - - CHECK MAILCHIMP- - - -  - - - - -->
   <section class="form centered">
     <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
     <form class="contact-form">
       <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
-      <input type="submit" value="SUBMIT" class="contact-button">
+      <input type="submit" value="Submit" class="contact-button">
     </form>
   </section>
 
@@ -122,13 +119,13 @@
 <!--  - - - - - - - FOOTER - - - - - - - - - -->
 <footer class="grid">
   <div class="col-4">
-      <a href="http://www.facebook.com/natashaverdon">Facebook</a>
+      <a class="social-media" href="http://www.facebook.com/natashaverdon">Facebook</a>
   </div>
   <div class="col-4">
-      <h6> © Nash.Jo Eats 2018. All rights reserved. </h6>
+      <h5> © Nash.Jo Eats 2018. All rights reserved. </h5>
   </div>
   <div class="col-4">
-      <a href="http://www.instagram.com/natashajoann">Instagram</a>
+      <a class="social-media" href="http://www.instagram.com/natashajoann">Instagram</a>
   </div>
 </footer>
 

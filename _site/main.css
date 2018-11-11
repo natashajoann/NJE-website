@@ -26,6 +26,11 @@ Website Colours: List colour hex codes here for reference
   padding-bottom:0;
   padding:0;
 }
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin:0;
+}
+
 /* section {
   padding: 5%;
 } */
@@ -68,7 +73,7 @@ a {
 }
 
  h2, h3, h4 {
-  text-transform: uppercase;
+  /* text-transform: capitalize; */
   color: black;
   font-weight: 700;
   margin-bottom: 0.5em;
@@ -77,23 +82,31 @@ a {
 /* HEADER STUFF */
 
 header{
-  padding-top:10px;
+  padding-top:5px;
   justify-content:space-around;
   padding-left: 5rem;
 }
+
 .home-menu{
   width:100%;
   padding-left: 5.7rem;
   font-size: 15px;
 }
 
+.menu-button:hover{
+  color:grey;
+}
+
+.header-img{
+  padding-left:7vw;
+}
+
 .title-img {
-  background-image:url("/Nashjoimages/fernando-prado-460051-unsplash.jpg");
+  background-image:url("/NashJoImages/fernando-prado-460051-unsplash.jpg");
   background-position:center;
   background-size:cover;
   width: 100%;
   min-height: 87vh;
-  margin-left: 7vw;
 
 }
 hr{
@@ -109,9 +122,21 @@ h1{
   font-family: 'Pattaya', sans-serif;
   font-size:5rem;
   line-height:1;
+  padding:3rem;
 }
 
 /* FEATURES */
+.blog-loop-background{
+  min-height: 29vw;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+.post-preview{
+  padding:25px;
+}
+
 .overlay{
   position:absolute;
   height:100%;
@@ -121,6 +146,7 @@ h1{
   opacity: 0;
   background-color: rgba(250,250,250,0.7);
   color:black;
+  top:0;
 
 }
 
@@ -130,7 +156,7 @@ h1{
 }
 /* BACKGROUND FIXED - parallax - */
 .parallax{
-  background-image: url("/nashjoimages/Josh-Wilburne-unsplash.png");
+  background-image: url("/NashJoImages/Josh-Wilburne-unsplash.png");
 
   /* Set a specific height */
   min-height: 50vh;
@@ -146,3 +172,93 @@ h1{
 .parallax section{
   height: 30vh;
 }
+
+
+/* footer section */
+.form{
+  padding: 6%;
+  margin: auto;
+  width: 34rem;
+}
+
+.form h3{
+  font-size:25px;
+}
+
+form{
+  display:block;
+  margin: auto;
+}
+
+.contact-button:hover{
+  background-color:#00664e;
+}
+
+input{
+  width:70%;
+  height:1.2rem;
+}
+
+.contact-button{
+  background-color:#00cc9c;
+  height:1.2rem;
+  width:5rem;
+}
+
+footer{
+  text-align:center;
+  background-color:grey;
+  padding:2rem;
+}
+
+.social-media:hover{
+  color:grey;
+}
+
+/* blog post page */
+/* Universal blog post style */
+[class*blog-layout]{
+  font-family: 'Cormorant Garamond';
+}
+/* blog post 2 grid formatting */
+.recipe-box{
+  background-color: pink;
+  position:relative;
+}
+.blog-layout2 h4, .blog-layout3 h4 {
+  text-decoration: underline;
+}
+
+#article-img{
+        float: left;
+        shape-outside: attr(src url);
+        shape-image-threshold: 0.1;
+    padding: 1rem;
+}
+
+.recipe-div{
+  padding:10px;
+  padding-left:2rem;
+  position:relative;
+  background-color:pink;
+}
+
+/* IS THERE AN EASIER WAY OF HAVING THIS STICK TO THE BOTTOM? GOOGLE */
+.recipe-box1{
+  padding-top:6rem;
+}
+
+.recipe-box{
+  padding-left:2rem;
+}
+
+.blog-post{
+  padding: 10px 20px;
+}
+.ingredients{
+  padding-bottom:10px;
+  padding-right:15px;
+}
+
+
+/* BLOGPOST LAYOUT 3  */
