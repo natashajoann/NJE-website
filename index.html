@@ -4,8 +4,8 @@ layout: default
 
 <body>
 <!-- - - - - - - -  Big banner image - - - - - - - - - -->
-<section class="header-img">
-  <div class="title-img"> </div>
+    <section class="header-img">
+    <div class="title-img"> </div>
 <!-- - - - - - - - -  - -  Features Section - - - - - - - - - -  -->
 <!-- Is there a way of automating this to update and show latest posts? -->
 <!-- In CSS: [class*article-box]{
@@ -15,18 +15,18 @@ layout: default
   background-position: center;
 
 } -->
-</section>
 <section class="grid padded-5 features centered">
   <div class="col-12"><h2> Featured </h2></div>
 
   {% for post in site.posts limit:4 %}
     <div class="col-6 post-preview">
-      <div class="blog-loop-background" style='background-image:url({{post.featured_image}})'/><div class="overlay">
-        <p> {{post.description}}</p>
-        <a href="{{post.url}}"> Read More </a>
-      </div></div>
+      <img src="{{post.featured-image}}"/>
       <h3> {{post.title}}</h3>
       <p> {{post.author}}</p>
+      <div class="overlay">
+        <p> {{post.description}}</p>
+        <a href="{{post.url}}"> Read More </a>
+      </div>
       </div>
   {% endfor %}
 
@@ -48,12 +48,12 @@ layout: default
   <!-- ORIGINALLY THIS IS WHAT I DID: This div ^ give it nothing but padding so you can see the image behind it?? EVENTUALLY I JUST TOOK OUT THE SECOND DIV-->
 
 
-<!--  - - -  -FORM SECTION - - CHECK MAILCHIMP- - - -  - - - - -->
+<!--  - - -  -FORM SECTION -- CHECK MAILCHIMP- - - -  - - - - -->
   <section class="form centered">
     <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
     <form class="contact-form">
       <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
-      <input type="submit" value="Submit" class="contact-button">
+      <input type="submit" value="SUBMIT" class="contact-button">
     </form>
   </section>
 
