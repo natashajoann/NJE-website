@@ -216,3 +216,49 @@ footer{
 }
 
 /* blog post page */
+/* Universal blog post style */
+[class*blog-layout]{
+  font-family: 'Cormorant Garamond';
+}
+/* blog post 2 grid formatting */
+.recipe-box{
+  background-color: pink;
+  position:relative;
+}
+.blog-layout2 h4, .blog-layout3 h4 {
+  text-decoration: underline;
+}
+
+#article-img{
+        float: left;
+        shape-outside: attr(src url);
+        shape-image-threshold: 0.1;
+    padding: 1rem;
+}
+
+.recipe-div{
+  padding:10px;
+  padding-left:2rem;
+  position:relative;
+  background-color:pink;
+}
+
+/* IS THERE AN EASIER WAY OF HAVING THIS STICK TO THE BOTTOM? GOOGLE */
+.recipe-box1{
+  padding-top:6rem;
+}
+
+.recipe-box{
+  padding-left:2rem;
+}
+
+.blog-post{
+  padding: 10px 20px;
+}
+.ingredients{
+  padding-bottom:10px;
+  padding-right:15px;
+}
+
+
+/* BLOGPOST LAYOUT 3  */

@@ -3,10 +3,10 @@ layout: default
 ---
 
 <!-- - - - -  BLOG POST SECTION  - - -   -->
-<section class="grid">
+<section class="grid blog-layout3">
 <div class="col-5 blog-post2">
-  <h3> {{page.author}} </h3>
-  <h4> {{page.recipe}} </h4>
+  <h2> {{page.author}} </h2>
+  <h3> {{page.recipe}} </h3>
 </div>
 <div class="col-4"
   {{content}}> </div>
@@ -24,6 +24,10 @@ layout: default
     <div class="ingredients">
       <h4> Ingredients </h4> <br>
        {{page.ingredients_html}}
+  </div>
+  <div class="recipe-directions">
+    <h4> Directions </h4>
+    {{page.directions_html}}
   </div>
 </div>
 </section>

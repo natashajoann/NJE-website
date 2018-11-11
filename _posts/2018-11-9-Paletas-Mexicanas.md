@@ -1,12 +1,16 @@
 ---
 layout: post-3-grid
 title: Paletas Mexicanas
+heading: Paletas Mexicanas
 description: This is where I will have a description
 featured_image: https://loremflickr.com/320/240
 author: Natasha Joann
-ingredients_html: 
+ingredients_html:
 directions_html:
 author_image:
+  - https://loremflickr.com/320/240
+  - https://loremflickr.com/320/240
+  - https://loremflickr.com/320/240
 ---
 
 <h2> {{page.heading}} </h2>

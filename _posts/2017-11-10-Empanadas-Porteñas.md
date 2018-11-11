@@ -6,9 +6,9 @@ recipe: Chicken Empanadas
 description: This is where I will have a description
 featured_image: https://loremflickr.com/320/240
 author: Natasha Joann
-ingredients_html: 
-directions_html:
-author_image:
+ingredients_html: I love food so much here are some yummy yummy foods that you can eat! I love food so much here are some yummy yummy foods that you can eat!I love food so much here are some yummy yummy foods that you can eat!I love food so much here are some yummy yummy foods that you can eat!
+directions_html: I love food so much here are some yummy yummy foods that you can eat! I love food so much here are some yummy yummy foods that you can eat!I love food so much here are some yummy yummy foods that you can eat!I love food so much here are some yummy yummy foods that you can eat! I love food so much here are some yummy yummy foods that you can eat! I love food so much here are some yummy yummy foods that you can eat!I love food so much here are some yummy yummy foods that you can eat!I love food so much here are some yummy yummy foods that you can eat!
+author_image: https://loremflickr.com/320/240
 ---
 
 <h2> {{page.heading}} </h2>
