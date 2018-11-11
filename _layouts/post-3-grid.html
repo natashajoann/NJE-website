@@ -5,12 +5,8 @@ layout: default
 <!-- - - - -  BLOG POST SECTION  - - -   -->
 <section class="grid blog-layout3">
 <div class="col-5 blog-post2">
-  <h2> {{page.author}} </h2>
-  <h3> {{page.recipe}} </h3>
+  {{content}}
 </div>
-<div class="col-4"
-  {{content}}> </div>
-
 
 <div class="col-3 author-img2">
   {% for item in page.author_image %}
@@ -20,7 +16,8 @@ layout: default
 </div>
 
 <div class="col-4 recipe-box2">
-  <h3> Empanadas Porteñas </h3>
+  <h2> {{page.author}} </h2>
+  <h3> {{page.recipe}} </h3>
     <div class="ingredients">
       <h4> Ingredients </h4> <br>
        {{page.ingredients_html}}

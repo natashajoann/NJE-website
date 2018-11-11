@@ -2,6 +2,7 @@
 layout: post-3-grid
 title: Paletas Mexicanas
 heading: Paletas Mexicanas
+recipe: Spiced Strawberry Paleta
 description: This is where I will have a description
 featured_image: https://loremflickr.com/320/240
 author: Natasha Joann
