@@ -2,6 +2,7 @@
 layout: post-2-grid
 title: Empanadas Porteñas
 heading: Braving the Silver Sun
+recipe: Chicken Empanadas
 description: This is where I will have a description
 featured_image: https://loremflickr.com/320/240
 author: Natasha Joann

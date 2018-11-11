@@ -102,7 +102,7 @@ header{
 }
 
 .title-img {
-  background-image:url("/Nashjoimages/fernando-prado-460051-unsplash.jpg");
+  background-image:url("/NashJoImages/fernando-prado-460051-unsplash.jpg");
   background-position:center;
   background-size:cover;
   width: 100%;
@@ -156,7 +156,7 @@ h1{
 }
 /* BACKGROUND FIXED - parallax - */
 .parallax{
-  background-image: url("/nashjoimages/Josh-Wilburne-unsplash.png");
+  background-image: url("/NashJoImages/Josh-Wilburne-unsplash.png");
 
   /* Set a specific height */
   min-height: 50vh;
