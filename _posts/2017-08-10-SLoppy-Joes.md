@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Sloppy Joes
 description: This is where I will have a description
 featured_image: https://loremflickr.com/320/240

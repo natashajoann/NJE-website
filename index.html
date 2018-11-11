@@ -16,20 +16,22 @@ layout: default
 
 } -->
 <section class="grid padded-5 features centered">
-  <div class="col-12"><h2> Featured </h2></div>
+  <div class="col-12 post-preview"><h2> Featured </h2></div>
 
   {% for post in site.posts limit:4 %}
-    <div class="post-preview col-6">
+    <div class="col-6">
       <img src="{{post.featured-image}}"/>
       <h3> {{post.title}}</h3>
       <p> {{post.author}}</p>
-      <p> {{post.description}}</p>
-      <a href="{{post.url}}"> Read More </a>
+      <div class="overlay">
+        <p> {{post.description}}</p>
+        <a href="{{post.url}}"> Read More </a>
+      </div>
       </div>
   {% endfor %}
 
 </section>
-<!-- - - - - - - - -  - - - - - Paralax - - - - - - - - - ---   -->
+<!-- - - - - - - - -  - - - - - Paralax - - - - - - - - - - - -   -->
 <!-- PUT THIS IN YOUR CSS: make sure section above has some padding at the bottom, and the next section has padding at the top. And then add this: .parallax {
     /* The image used */
     background-image: url("https://loremflickr.com/320/240");

@@ -1,9 +1,12 @@
 ---
-layout: default
-title: Vivir Para Contarla
+layout: post
+title: Colombian Ajiaco
 description: This is where I will have a description
-featured-image: https://loremflickr.com/320/240
+featured_image: https://loremflickr.com/320/240
 author: Natasha Joann
+ingredients_html:
+directions_html:
+author_image:
 ---
 
 <h2> Vivir Para Contarla </h2>

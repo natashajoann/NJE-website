@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: post
 title: Paletas Mexicanas
 description: This is where I will have a description
-featured-image: https://loremflickr.com/320/240
+featured_image: https://loremflickr.com/320/240
 author: Natasha Joann
+ingredients_html:
+directions_html:
+author_image:
 ---
 
 <h2> Paletas Mexicanas </h2>
