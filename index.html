@@ -1,74 +1,33 @@
-<!DOCTYPE html>
-<head>
-  <title> Nash.Jo Eats </title>
-  <!-- These are my css links, always put your own css last -->
-  <!-- GOOGLE FONTS -->
-  <!-- GRIDLEX -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-  <!-- my css file -->
-</head>
+---
+layout: default
+---
+
 <body>
-  <!--  - - - - - - - - HEADER SECTION - - - - - - - - - - - -->
-  <!-- how do I add the fancy menu? -->
-  <header class="grid">
-    <div class="col-6 home-menu">
-      <a href="...">HOME</a>
-      <a href="...">SEARCH</a>
-      <!-- add link for searching -->
-    </div>
-
-    <div class="col-6 info-menu">
-      <a href="...">Places</a>
-      <!-- would this be the ahref="#places" to get to divs with id of places -- or make it more specific with buttons for specific places/contients -->
-      <a href="...">People</a>
-      <a href="...">Recipes</a>
-      <a href="...">About</a>
-    </div>
-    <h1> Nash.Jo Eats </h1>
-<div class="title-img">
-</div>
-</header>
-
+<!-- - - - - - - -  Big banner image - - - - - - - - - -->
+    <section class="header-img">
+    <div class="title-img"> </div>
 <!-- - - - - - - - -  - -  Features Section - - - - - - - - - -  -->
+<!-- Is there a way of automating this to update and show latest posts? -->
 <!-- In CSS: [class*article-box]{
   padding-bottom: 50%;
-   background-image: url("https://loremflickr.com/320/240");
   border: 2px solid blue;
   background-size: cover;
   background-position: center;
 
 } -->
-<section class="grid addbox features">
+<section class="grid padded-5 features centered">
   <div class="col-12"><h2> Featured </h2></div>
 
-  <a class="col-6" href="...">
-    <div class="article-box1">
-      <p class="moretext"> Deconstructing Paletas <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quis at voluptate vero laudantium quaerat aliquam ipsam odio.
-    </p>
-    </div>
-  </a>
+  {% for post in site.posts limit:4 %}
+    <div class="post-preview col-6">
+      <img src="{{post.featured-image}}"/>
+      <h3> {{post.title}}</h3>
+      <p> {{post.author}}</p>
+      <p> {{post.description}}</p>
+      <a href="{{post.url}}"> Read More </a>
+      </div>
+  {% endfor %}
 
-  <a class="col-6" href="...">
-    <div class="article-box2">
-      <p class="moretext"> Deconstructing Paletas <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quis at voluptate vero laudantium quaerat aliquam ipsam odio.
-    </p>
-    </div>
-  </a>
-
-  <a class="col-6" href="...">
-    <div class="article-box3">
-      <p class="moretext"> Deconstructing Paletas <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quis at voluptate vero laudantium quaerat aliquam ipsam odio.
-    </p>
-    </div>
-  </a>
-
-   <a class="col-6" href="...">
-    <div class="article-box4">
-      <p class="moretext"> Deconstructing Paletas <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur quis at voluptate vero laudantium quaerat aliquam ipsam odio.
-    </p>
-    </div>
-  </a>
-  <a class="features-button" href="...">Read More...</a>
 </section>
 <!-- - - - - - - - -  - - - - - Paralax - - - - - - - - - ---   -->
 <!-- PUT THIS IN YOUR CSS: make sure section above has some padding at the bottom, and the next section has padding at the top. And then add this: .parallax {
@@ -82,21 +41,18 @@
     background-attachment: fixed;
     background-position: center;
 } -->
-<div class="parallax">
+<section class="parallax"> </section>
   <!-- <div class="para-space"></div> -->
   <!-- ORIGINALLY THIS IS WHAT I DID: This div ^ give it nothing but padding so you can see the image behind it?? EVENTUALLY I JUST TOOK OUT THE SECOND DIV-->
-  <!-- </div> -->
-<!--  - - -  -FORM SECTION -- DO I HAVE TO ADD EMAIL SOMEHERE?- - - -  - - - - -->
-<div class="col-6_sm-12">
+
+
+<!--  - - -  -FORM SECTION -- CHECK MAILCHIMP- - - -  - - - - -->
+  <section class="form centered">
+    <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
     <form class="contact-form">
       <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
       <input type="submit" value="SUBMIT" class="contact-button">
     </form>
-</div>
-
-<!--  - - - - - - - FOOTER - - - - - - - - - -->
-<a href="http://www.facebook.com/natashaverdon">Facebook</a>
-<h6> © Nash.Jo Eats 2018. All rights reserved. </h6>
-<a href="http://www.instagram.com/natashajoann">Instagram</a>
+  </section>
 
 </body>

@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<!--  - - - - - - BLOG POST SECTIONS - - - - - - -->
+<!-- First Blog Post - 2 grid -->
+<section class="grid">
+  <div class="col-4 recipe-box">
+    <h3> {{page.heading}} </h3>
+    <div class="ingredients">
+      <!-- add cols to CSS ask tina -->
+      <h4> Ingredients </h4>
+         {{page.ingredients_html}}
+    </div>
+
+    <div class="recipe-directions">
+      <h4> Directions </h4>
+      {{page.directions_html}}
+    </div>
+  </div>
+
+<div class="col-8 blog-post">
+<!-- CHANGE THE IMAGE TO ONE THAT YOU WANT BELOW -->
+<img id="article-img" src="{{page.author_image}}" />
+<!-- IN THE CSS: #article-img {
+      float: left;
+      shape-outside: attr(src url);
+      shape-image-threshold: 0.1;
+  padding: 1rem;
+    } -->
+    {{content}}
+
+</div>
+</section>

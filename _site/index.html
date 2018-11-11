@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+  <title> Nash.Jo Eats </title>
+  <!-- These are my css links, always put your own css last -->
+  <!-- GOOGLE FONTS -->
+  <link href=“https://fonts.googleapis.com/css?family=Cormorant+Garamond” rel=“stylesheet”>
+  <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+  <!-- GRIDLEX -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <!-- my css file -->
+<link href="/main.css" rel="stylesheet">
+</head>
+<body>
+  <!--  - - - - - - - - HEADER SECTION - - - - - - - - - - - -->
+  <header class="grid">
+    <h1 class="col-12 centered"> Nash. Jo Eats </h1>
+    <!-- YOU WANT TO ADD BURGER MENU FOR MOBILE VERSION -->
+    <div class="grid home-menu">
+      <div class="col-2"> <a href="#">Home</a> </div>
+      <!-- add link for searching -->
+      <div class="col-2"> <a href="...">Places</a> </div>
+      <div class="col-2"> <a href="...">People</a> </div>
+      <!-- would this be the a href="people.html" to get to a page where there are all the authors/story people -->
+      <div class="col-2"> <a href="...">Recipes</a> </div>
+      <div class="col-2"> <a href="...">About</a> </div>
+      <div class="col-2"> <a href="#">Search</a> </div>
+    </div>
+
+    <div class="col-2"></div>
+
+    <div class="col-10"><hr></div>
+</header>
+
+<!--  - - - - - - CONTENT GOES HERE - - - -  - -->
+<body>
+<!-- - - - - - - -  Big banner image - - - - - - - - - -->
+    <section class="header-img">
+    <div class="title-img"> </div>
+<!-- - - - - - - - -  - -  Features Section - - - - - - - - - -  -->
+<!-- Is there a way of automating this to update and show latest posts? -->
+<!-- In CSS: [class*article-box]{
+  padding-bottom: 50%;
+  border: 2px solid blue;
+  background-size: cover;
+  background-position: center;
+
+} -->
+<section class="grid padded-5 features centered">
+  <div class="col-12"><h2> Featured </h2></div>
+
+  
+    <div class="post-preview col-6">
+      <img src="https://loremflickr.com/320/240"/>
+      <h3> Vivir Para Contarla</h3>
+      <p> Natasha Joann</p>
+      <p> This is where I will have a description</p>
+      <a href="/2018/11/10/Colombian-Ajiaco.html"> Read More </a>
+      </div>
+  
+    <div class="post-preview col-6">
+      <img src="https://loremflickr.com/320/240"/>
+      <h3> Paletas Mexicanas</h3>
+      <p> Natasha Joann</p>
+      <p> This is where I will have a description</p>
+      <a href="/2018/11/09/Paletas-Mexicanas.html"> Read More </a>
+      </div>
+  
+    <div class="post-preview col-6">
+      <img src="https://loremflickr.com/320/240"/>
+      <h3> Empanadas Porteñas</h3>
+      <p> Natasha Joann</p>
+      <p> This is where I will have a description</p>
+      <a href="/2017/11/10/Empanadas-Porte%C3%B1as.html"> Read More </a>
+      </div>
+  
+    <div class="post-preview col-6">
+      <img src="https://loremflickr.com/320/240"/>
+      <h3> Sloppy Joes</h3>
+      <p> Natasha Joann</p>
+      <p> This is where I will have a description</p>
+      <a href="/2017/08/10/SLoppy-Joes.html"> Read More </a>
+      </div>
+  
+
+</section>
+<!-- - - - - - - - -  - - - - - Paralax - - - - - - - - - ---   -->
+<!-- PUT THIS IN YOUR CSS: make sure section above has some padding at the bottom, and the next section has padding at the top. And then add this: .parallax {
+    /* The image used */
+    background-image: url("https://loremflickr.com/320/240");
+
+    /* Set a specific height */
+    min-height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+} -->
+<section class="parallax"> </section>
+  <!-- <div class="para-space"></div> -->
+  <!-- ORIGINALLY THIS IS WHAT I DID: This div ^ give it nothing but padding so you can see the image behind it?? EVENTUALLY I JUST TOOK OUT THE SECOND DIV-->
+
+
+<!--  - - -  -FORM SECTION -- CHECK MAILCHIMP- - - -  - - - - -->
+  <section class="form centered">
+    <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
+    <form class="contact-form">
+      <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
+      <input type="submit" value="SUBMIT" class="contact-button">
+    </form>
+  </section>
+
+</body>
+
+<!--  - - - - - - - FOOTER - - - - - - - - - -->
+<footer class="grid">
+  <div class="col-4">
+      <a href="http://www.facebook.com/natashaverdon">Facebook</a>
+  </div>
+  <div class="col-4">
+      <h6> © Nash.Jo Eats 2018. All rights reserved. </h6>
+  </div>
+  <div class="col-4">
+      <a href="http://www.instagram.com/natashajoann">Instagram</a>
+  </div>
+</footer>
+
+<!-- add a scripts.html includes page -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>" -->
+
+</body>
+</html>

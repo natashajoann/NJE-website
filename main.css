@@ -1,0 +1,134 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+  - SPECIFIC PAGES
+    - Page Name
+---------------------------
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+----------------------------
+*/
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(200,200,200); */
+
+}
+
+[class*=col-], [class*=col_], [class~=col]{
+  padding-bottom:0;
+  padding:0;
+}
+/* section {
+  padding: 5%;
+} */
+
+img {
+  max-width: 100%; /* This ensures an image never breaks it's container */
+}
+
+/* ---- GENERAL HELPER CLASSES --------------------------- */
+.tall         { min-height:100vh; }
+.med-height   { min-height: 50vh; }
+
+.left         { text-align: left; }
+.centered     { text-align: center; }
+.right        { text-align: right; }
+
+.no-padding { padding: 0; }
+
+.padded-1 { padding: 1%; }
+.padded-3 { padding: 3%; }
+.padded-5 { padding: 5%; }
+.padded-10 {padding: 10%; }
+
+.padded-top-1 { padding-top: 1%;}
+
+.mob-show { display: none;}
+
+.bg-img {
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----- UNIVERSAL STYLES --------------------------- */
+
+a {
+  font-family: 'Cormorant Garamond';
+  color: black;
+  text-decoration:none;
+}
+
+ h2, h3, h4 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+/* HEADER STUFF */
+
+header{
+  padding-top:10px;
+  justify-content:space-around;
+  padding-left: 5rem;
+}
+.home-menu{
+  width:100%;
+  padding-left: 5.7rem;
+  font-size: 15px;
+}
+
+.title-img {
+  background-image:url("Nashjoimages/fernando-prado-460051-unsplash.jpg");
+  background-position:center;
+  background-size:cover;
+  width: 100%;
+  min-height: 87vh;
+  margin-left: 7vw;
+
+}
+hr{
+  padding:2.5px;
+  padding-right:0;
+  background-color:black;
+  text-align:right;
+  width:100%;
+  border:0;
+}
+
+h1{
+  font-family: 'Pattaya', sans-serif;
+  font-size:5rem;
+  line-height:1;
+}
+
+/* FEATURES */
+
+
+/* BACKGROUND FIXED - parallax - */
+.parallax{
+  background-image: url("nashjoimages/Josh-Wilburne-unsplash.png");
+
+  /* Set a specific height */
+  min-height: 50vh;
+  max-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top left;
+  background-size:cover;
+  padding-bottom:40%;
+}
+
+.parallax section{
+  height: 30vh;
+}
