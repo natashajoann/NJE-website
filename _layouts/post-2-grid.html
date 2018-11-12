@@ -5,8 +5,7 @@ layout: default
 <!--  - - - - - - BLOG POST SECTIONS - - - - - - -->
 <!-- First Blog Post - 2 grid -->
 <section class="grid blog-layout2">
-  <div class="col-4 recipe-div">
-    <h2> {{page.author}}</h2>
+  <div class="col-4_sm-12 recipe-div">
       <div class="recipe-box1">
     <h3> {{page.recipe}} </h3>
     <div class="ingredients">
@@ -22,9 +21,11 @@ layout: default
     </div>
   </div>
 
-<div class="col-8 blog-post">
+<div class="col-8_sm-12 blog-post">
 <!-- CHANGE THE IMAGE TO ONE THAT YOU WANT BELOW -->
 <img id="article-img" src="{{page.author_image}}" />
+  <h2> {{page.heading}} </h2>
+  <h4> {{page.author}}</h4>
 <!-- IN THE CSS: #article-img {
       float: left;
       shape-outside: attr(src url);

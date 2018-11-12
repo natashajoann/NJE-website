@@ -20,7 +20,7 @@ layout: default
   <div class="col-12"><h2> Featured </h2></div>
 
   {% for post in site.posts limit:4 %}
-    <div class="col-6 post-preview">
+    <div class="col-6_sm-12 post-preview">
       <div class="blog-loop-background" style='background-image:url({{post.featured_image}})'/><div class="overlay">
         <p> {{post.description}}</p>
         <a href="{{post.url}}"> Read More </a>
@@ -49,12 +49,14 @@ layout: default
 
 
 <!--  - - -  -FORM SECTION - - CHECK MAILCHIMP- - - -  - - - - -->
-  <section class="form centered">
-    <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
-    <form class="contact-form">
-      <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
-      <input type="submit" value="Submit" class="contact-button">
-    </form>
+  <section class="grid">
+    <div class="form centered col-6_sm-12">
+      <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
+      <form class="contact-form">
+        <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
+        <input type="submit" value="Submit" class="contact-button">
+      </form>
+  </div>
   </section>
 
 </body>

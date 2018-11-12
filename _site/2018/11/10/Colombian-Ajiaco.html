@@ -5,6 +5,8 @@
   <!-- GOOGLE FONTS -->
   <link href=“https://fonts.googleapis.com/css?family=Cormorant+Garamond” rel=“stylesheet”>
   <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+  <!-- viewport  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- GRIDLEX -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
   <!-- my css file -->
@@ -12,9 +14,26 @@
 </head>
 <body>
   <!--  - - - - - - - - HEADER SECTION - - - - - - - - - - - -->
-  <header class="grid">
+  <!-- Mobile responsive burger menu: -->
+  <nav class="mobile-menu">
+        <div class="burger-button">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+         <div class="burger-menu">
+           <a href="/index.html">Home</a>
+           <a href="/places.html">Places</a>
+           <a href="/people.html">People</a>
+           <a href="/recipes.html">Recipes</a>
+           <a href="/about.html">About</a>
+           <a href="/search.html">Search</a>
+        </div>
+      </nav>
+      <!-- REGULAR MENU:  -->
+  <header class="grid desktop-menu">
     <div class="col-12"><h1 class="centered"> Nash. Jo Eats </h1></div>
-    <!-- YOU WANT TO ADD BURGER MENU FOR MOBILE VERSION -->
+
     <div class="grid home-menu">
       <div class="col-2"> <a class="menu-button" href="#">Home</a> </div>
       <!-- add link for searching -->
@@ -28,32 +47,36 @@
 
     <div class="col-1"></div>
 
-    <div class="col-11"><hr></div>
+    <div class="col-11 hr-line"><hr></div>
 </header>
 
 <!--  - - - - - - CONTENT GOES HERE - - - -  - -->
 <!-- - - - -  BLOG POST SECTION  - - -   -->
 <section class="grid blog-layout3">
-<div class="col-5 blog-post2">
+<div class="col-5_sm-12 blog-post2">
   <h2> Living to Tell the Tale </h2>
-<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <h4> Natasha Joann</h4>
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
 </div>
 
-<div class="col-3 author-img2">
+<div class="col-3_sm-12 author-img2 grid">
   
+  <div class="col-12_sm-6 author-bg-img2">
   <img src="https://loremflickr.com/320/240" />
   <br>
+</div>
   
+  <div class="col-12_sm-6 author-bg-img2">
   <img src="https://loremflickr.com/320/240" />
   <br>
+</div>
   
 </div>
 
-<div class="col-4 recipe-box2">
-  <h2> Natasha Joann </h2>
+<div class="col-4_sm-12 recipe-box2">
   <h3>  </h3>
     <div class="ingredients">
       <h4> Ingredients </h4> <br>
@@ -80,7 +103,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </footer>
 
 <!-- add a scripts.html includes page -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>" -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/main.js"></script>
 
 </body>
 </html>

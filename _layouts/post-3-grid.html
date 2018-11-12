@@ -4,19 +4,22 @@ layout: default
 
 <!-- - - - -  BLOG POST SECTION  - - -   -->
 <section class="grid blog-layout3">
-<div class="col-5 blog-post2">
+<div class="col-5_sm-12 blog-post2">
+  <h2> {{page.heading}} </h2>
+  <h4> {{page.author}}</h4>
   {{content}}
 </div>
 
-<div class="col-3 author-img2">
+<div class="col-3_sm-12 author-img2 grid">
   {% for item in page.author_image %}
+  <div class="col-12_sm-6 author-bg-img2">
   <img src="{{item}}" />
   <br>
+</div>
   {% endfor %}
 </div>
 
-<div class="col-4 recipe-box2">
-  <h2> {{page.author}} </h2>
+<div class="col-4_sm-12 recipe-box2">
   <h3> {{page.recipe}} </h3>
     <div class="ingredients">
       <h4> Ingredients </h4> <br>

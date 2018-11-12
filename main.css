@@ -84,12 +84,15 @@ a {
 header{
   padding-top:5px;
   justify-content:space-around;
-  padding-left: 5rem;
+}
+
+.hr-line{
+  padding-left:5%;
 }
 
 .home-menu{
   width:100%;
-  padding-left: 5.7rem;
+  padding-left: 16%;
   font-size: 15px;
 }
 
@@ -107,9 +110,9 @@ header{
   background-size:cover;
   width: 100%;
   min-height: 87vh;
-
 }
-hr{
+
+hr {
   padding:2.5px;
   padding-right:0;
   background-color:black;
@@ -178,7 +181,6 @@ h1{
 .form{
   padding: 6%;
   margin: auto;
-  width: 34rem;
 }
 
 .form h3{
@@ -203,6 +205,7 @@ input{
   background-color:#00cc9c;
   height:1.2rem;
   width:5rem;
+  text-align:center;
 }
 
 footer{
@@ -237,7 +240,7 @@ footer{
   padding:10px;
   padding-left:2rem;
   position:relative;
-  background-color:pink;
+  background-color:#FFD9D9;
 }
 
 /* IS THERE AN EASIER WAY OF HAVING THIS STICK TO THE BOTTOM? GOOGLE */
@@ -250,36 +253,221 @@ footer{
 }
 
 .blog-post{
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 .ingredients{
   padding-bottom:10px;
-  padding-right:15px;
 }
 
 
 /* BLOGPOST LAYOUT 3  */
 .recipe-box2{
-  background-color:#af4402;
+  background-color:#bd723e;
   padding:10px;
   padding-left:2rem;
 }
+
 
 .blog-post2 {
   padding: 10px 20px;
 }
 
 /* ABOUT PAGE */
-.about-me{
-  border:1px solid grey;
+      /* about div section */
+.about-me, .contribute {
+  padding:2rem;
 }
 .push-right {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
   margin-right: -2rem;
+  z-index:1;
+  background-color:#cc6f6f;
+  padding:2rem;
+  border: 1px solid rgb(60,60,60);
 }
 
 .bg-image{
   background-image:url("/NashJoImages/tashaimg.png");
+  padding:21%;
+  background-position:center;
+  background-size:cover;
+}
+            /* contribute div section */
+.bg-image2{
+  background-image:url("/NashJoImages/stefania-crudeli-1128093-unsplash.jpg");
+  padding:21%;
+  background-position:center;
+  background-size:cover;
+}
+
+
+.push-left{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: -2rem;
+  margin-right: 2rem;
+  z-index:1;
+  padding:2rem;
+  border: 1px solid rgb(60,60,60);
+  background-color:#ebe2ca
+}
+
+.contact-form{
+  margin:auto;
+  width: 100%;
+}
+
+.contribute h2, .contribute h4 {
+  margin: auto;
+  text-align:center;
+}
+
+.contribute h2{
+  font-size:27px;
+}
+
+.contact-button{
+  background-color:#81cab8;
+  border:none;
+  color:white;
+  height: 1.2rem;
+}
+
+.contact-button:hover{
+  background-color:#65ab9a;
+  color: black;
+}
+
+.contact-form input{
+  width:80%;
+  padding: 2%;
+  margin: 2% 0;
+  border: 1px solid black;
+  font-size: 15px;
+  text-align: left;
+  box-sizing: content-box;
+}
+
+textarea{
+  width:85%;
+  resize:none;
+  padding-bottom: 5rem;
+}
+
+/* MEdia Queries */
+
+  .mobile-menu{
+    display:none;
+  }
+
+@media (max-width: 768px){
+    /* author image layout 3 */
+    .author-img2{
+      display:in-line block;
+    }
+    .author-bg-img2{
+      padding:6%;
+    }
+    .recipe-box2, .recipe-box1{
+      text-align:right;
+      padding: 3%;
+    }
+
+    .blog-post{
+      order:-1;
+    }
+
+
+  /* burger menu responsiveness */
+  .mobile-menu{
+    display:block;
+  }
+  .home-menu{
+  display:none;
+  }
+
+
+  .burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+}
+/*this is where you can change the color of the buttons*/
+.burger-button span{
+  width: 30px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 1s;
+}
+.burger-button.active span{
+  border-color: grey;
+  background-color:black;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:white;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    padding-top:50px;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  padding: 15px 11px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #7a7876;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 7px;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.burger-menu li{list-style:none}
+
 }

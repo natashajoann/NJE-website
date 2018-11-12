@@ -5,6 +5,8 @@
   <!-- GOOGLE FONTS -->
   <link href=“https://fonts.googleapis.com/css?family=Cormorant+Garamond” rel=“stylesheet”>
   <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+  <!-- viewport  -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- GRIDLEX -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
   <!-- my css file -->
@@ -12,9 +14,26 @@
 </head>
 <body>
   <!--  - - - - - - - - HEADER SECTION - - - - - - - - - - - -->
-  <header class="grid">
+  <!-- Mobile responsive burger menu: -->
+  <nav class="mobile-menu">
+        <div class="burger-button">
+            <span class="burger-top"></span>
+            <span class="burger-middle"></span>
+            <span class="burger-bottom"></span>
+        </div>
+         <div class="burger-menu">
+           <a href="/index.html">Home</a>
+           <a href="/places.html">Places</a>
+           <a href="/people.html">People</a>
+           <a href="/recipes.html">Recipes</a>
+           <a href="/about.html">About</a>
+           <a href="/search.html">Search</a>
+        </div>
+      </nav>
+      <!-- REGULAR MENU:  -->
+  <header class="grid desktop-menu">
     <div class="col-12"><h1 class="centered"> Nash. Jo Eats </h1></div>
-    <!-- YOU WANT TO ADD BURGER MENU FOR MOBILE VERSION -->
+
     <div class="grid home-menu">
       <div class="col-2"> <a class="menu-button" href="#">Home</a> </div>
       <!-- add link for searching -->
@@ -28,7 +47,7 @@
 
     <div class="col-1"></div>
 
-    <div class="col-11"><hr></div>
+    <div class="col-11 hr-line"><hr></div>
 </header>
 
 <!--  - - - - - - CONTENT GOES HERE - - - -  - -->
@@ -50,7 +69,7 @@
   <div class="col-12"><h2> Featured </h2></div>
 
   
-    <div class="col-6 post-preview">
+    <div class="col-6_sm-12 post-preview">
       <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
         <p> This is where I will have a description</p>
         <a href="/2018/11/10/vivir-para-contarla.html"> Read More </a>
@@ -59,7 +78,7 @@
       <p> Natasha Joann</p>
       </div>
   
-    <div class="col-6 post-preview">
+    <div class="col-6_sm-12 post-preview">
       <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
         <p> This is where I will have a description</p>
         <a href="/2018/11/10/Colombian-Ajiaco.html"> Read More </a>
@@ -68,7 +87,7 @@
       <p> Natasha Joann</p>
       </div>
   
-    <div class="col-6 post-preview">
+    <div class="col-6_sm-12 post-preview">
       <div class="blog-loop-background" style='background-image:url(https://loremflickr.com/320/240)'/><div class="overlay">
         <p> This is where I will have a description</p>
         <a href="/2018/11/09/Paletas-Mexicanas.html"> Read More </a>
@@ -77,7 +96,7 @@
       <p> Natasha Joann</p>
       </div>
   
-    <div class="col-6 post-preview">
+    <div class="col-6_sm-12 post-preview">
       <div class="blog-loop-background" style='background-image:url(/uploads/ronald-cuyan-434484-unsplash.jpg)'/><div class="overlay">
         <p> This is where I will have a description</p>
         <a href="/2017/11/10/empanadas-porte%C3%B1as.html"> Read More </a>
@@ -106,12 +125,14 @@
 
 
 <!--  - - -  -FORM SECTION - - CHECK MAILCHIMP- - - -  - - - - -->
-  <section class="form centered">
-    <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
-    <form class="contact-form">
-      <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
-      <input type="submit" value="Submit" class="contact-button">
-    </form>
+  <section class="grid">
+    <div class="form centered col-6_sm-12">
+      <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
+      <form class="contact-form">
+        <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
+        <input type="submit" value="Submit" class="contact-button">
+      </form>
+  </div>
   </section>
 
 </body>
@@ -130,7 +151,8 @@
 </footer>
 
 <!-- add a scripts.html includes page -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>" -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/main.js"></script>
 
 </body>
 </html>
