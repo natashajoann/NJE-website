@@ -3,13 +3,13 @@ layout: post-3-grid
 title: Colombian Ajiaco
 heading: Living to Tell the Tale
 description: This is where I will have a description
-featured_image: https://loremflickr.com/320/240
+featured_image: /NashJoImages/food.jpg
 author: Natasha Joann
 ingredients_html:
 directions_html:
 author_image:
-  - https://loremflickr.com/320/240
-  - https://loremflickr.com/320/240
+  - /NashJoImages/food.jpg
+  - /NashJoImages/food.jpg
 
 ---
 

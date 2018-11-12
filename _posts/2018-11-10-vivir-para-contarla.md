@@ -2,7 +2,7 @@
 layout: post-3-grid
 title: Vivir Para Contarla
 description: This is where I will have a description
-featured_image: https://loremflickr.com/320/240
+featured_image: /NashJoImages/food.jpg
 author: Natasha Joann
 ingredients_html:
 directions_html:

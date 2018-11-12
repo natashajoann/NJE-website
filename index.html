@@ -16,25 +16,28 @@ layout: default
 
 } -->
 </section>
-<section class="grid padded-5 features centered">
+<section class="grid padded-5-10 features centered">
   <div class="col-12"><h2> Featured </h2></div>
 
   {% for post in site.posts limit:4 %}
-    <div class="col-6_sm-12 post-preview">
-      <div class="blog-loop-background" style='background-image:url({{post.featured_image}})'/><div class="overlay">
-        <p> {{post.description}}</p>
-        <a href="{{post.url}}"> Read More </a>
-      </div></div>
-      <h3> {{post.title}}</h3>
-      <p> {{post.author}}</p>
+    <a href="{{post.url}}" class="col-6_sm-12 post-preview">
+      <div class="blog-loop-background" style="background-image:url({{post.featured_image}})">
+        <div class="overlay grid">
+          <p class="col-12-middle"> {{post.description}}</p>
+        </div>
       </div>
+      <div class="blog-loop-info">
+        <h3> {{post.title}}</h3>
+        <p> by {{post.author}}</p>
+      </div>
+    </a>
   {% endfor %}
 
 </section>
 <!-- - - - - - - - -  - - - - - Paralax - - - - - - - - - - - -   -->
 <!-- PUT THIS IN YOUR CSS: make sure section above has some padding at the bottom, and the next section has padding at the top. And then add this: .parallax {
     /* The image used */
-    background-image: url("https://loremflickr.com/320/240");
+    background-image: url("/NashJoImages/food.jpg");
 
     /* Set a specific height */
     min-height: 50vh;
@@ -53,8 +56,8 @@ layout: default
     <div class="form centered col-6_sm-12">
       <h3> Hungry for more? Sign up below to get more delicious stories! </h3>
       <form class="contact-form">
-        <input type="email" name="_replyto" class="contact-input" placeholder="Your Email">
-        <input type="submit" value="Submit" class="contact-button">
+        <input type="email" name="_replyto" class="contact-input" placeholder="Your Email"></input>
+        <input type="submit" value="Submit" class="contact-button"></input>
       </form>
   </div>
   </section>

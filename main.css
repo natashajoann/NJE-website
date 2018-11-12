@@ -22,7 +22,8 @@ Website Colours: List colour hex codes here for reference
 
 }
 body {
-  rgb(60,60,60);
+  color: rgb(60,60,60);
+  font-family: 'Noto Serif JP', serif;
 }
 
 [class*=col-], [class*=col_], [class~=col]{
@@ -56,6 +57,7 @@ img {
 .padded-3 { padding: 3%; }
 .padded-5 { padding: 5%; }
 .padded-10 {padding: 10%; }
+.padded-5-10 {padding: 5% 10%; }
 
 .padded-top-1 { padding-top: 1%;}
 
@@ -70,18 +72,14 @@ img {
 /* ----- UNIVERSAL STYLES --------------------------- */
 
 a {
-  font-family: 'Cormorant Garamond', serif;
   color: inherit;
-  text-decoration:none;
-}
-
-p{
-  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  display: inline-block;
 }
 
  h2, h3, h4 {
   /* text-transform: capitalize; */
-  font-weight: 700;
+  font-weight: normal;
   margin-bottom: 0.5em;
 }
 
@@ -98,12 +96,22 @@ header{
 
 .home-menu{
   width:100%;
-  padding-left: 16%;
   font-size: 15px;
+  text-align:center;
 }
 
-.menu-button:hover{
-  color:grey;
+.home-menu a {
+  padding: 1rem 2%;
+  margin-bottom: -3px;
+  z-index: 2; /* we need this to make sure it's in front of the other line */
+  position: relative; /* we need this to use z-index */
+  border-bottom: 3px solid rgb(60,60,60);
+  transition: all 0.5s;
+}
+
+.home-menu a:hover{
+  color: #cc6f6f;
+  border-color: #cc6f6f;
 }
 
 .header-img{
@@ -119,19 +127,20 @@ header{
 }
 
 hr {
-  padding:2.5px;
-  padding-right:0;
-  background-color:black;
-  text-align:right;
+  border: none;
+  border-bottom: 3px solid rgb(60,60,60);
   width:100%;
-  border:0;
 }
 
 h1{
   font-family: 'Pattaya', sans-serif;
   font-size:5rem;
   line-height:1;
-  padding:3rem;
+  padding:2rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 /* FEATURES */
@@ -142,6 +151,14 @@ h1{
     position:relative;
 }
 
+.blog-loop-info {
+  background-color: #fde49f;
+  width: 90%;
+  padding:0.5rem;
+  margin: -2rem auto 1rem;
+  z-index: 9;
+  position: relative;
+}
 .post-preview{
   padding:25px;
 }
@@ -150,15 +167,17 @@ h1{
   position:absolute;
   height:100%;
   width:100%;
-  padding: 20%;
+  padding: 5%;
   text-align: center;
   opacity: 0;
-  background-color: rgba(250,250,250,0.7);
-  color:black;
+  background-color: rgba(250,250,250,0.8);
+  color:rgb(90,90,90);
   top:0;
-
 }
 
+.overlay p {
+  font-size: 1.3rem;
+}
 .overlay:hover{
   opacity:1;
   transition: all 0.5s;
@@ -216,7 +235,7 @@ input{
 
 footer{
   text-align:center;
-  background-color:grey;
+  background-color: #cc6f6f;
   padding:2rem;
 }
 
@@ -226,9 +245,7 @@ footer{
 
 /* blog post page */
 /* Universal blog post style */
-[class*blog-layout]{
-  font-family: 'Cormorant Garamond';
-}
+
 /* blog post 2 grid formatting */
 
 .blog-layout2 h4, .blog-layout3 h4 {
@@ -246,7 +263,7 @@ footer{
   padding:10px;
   padding-left:2rem;
   position:relative;
-  background-color:#FFD9D9;
+  background-color: #fde49f;
 }
 
 /* IS THERE AN EASIER WAY OF HAVING THIS STICK TO THE BOTTOM? GOOGLE */
@@ -268,7 +285,7 @@ footer{
 
 /* BLOGPOST LAYOUT 3  */
 .recipe-box2{
-  background-color:#bd723e;
+  background-color: #fde49f;
   padding:10px;
   padding-left:2rem;
 }
@@ -291,7 +308,6 @@ footer{
   z-index:1;
   background-color:#cc6f6f;
   padding:2rem;
-  border: 1px solid rgb(60,60,60);
 }
 
 .bg-image{
@@ -316,12 +332,11 @@ footer{
   margin-right: 2rem;
   z-index:1;
   padding:2rem;
-  border: 1px solid rgb(60,60,60);
   background-color:#fde49f;
 }
 
 .contact-form{
-  margin:auto;
+  margin: 1rem auto 0;
   width: 100%;
 }
 
@@ -343,24 +358,27 @@ footer{
 
 .contact-button:hover{
   background-color:#65ab9a;
-  color: black;
+  color: rgb(90,90,90);
 }
 
 .contact-form input{
-  width:80%;
+  width: 80%;
   padding: 2%;
-  margin: 2% 0;
+  margin: 0 0 0.5rem;
   border: 2px solid #81cab8;
-  font-size: 15px;
+  font-size: 1rem;
   text-align: left;
   box-sizing: content-box;
 }
 
 textarea{
   width:85%;
+  padding: 2%;
+  margin: 0 0 0.5rem;
   resize:none;
   padding-bottom: 5rem;
-  border: 1px solid black;
+  border: 2px solid #81cab8;
+  font-size: 1rem;
 }
 
 
@@ -424,15 +442,14 @@ textarea{
 /*this is where you can change the color of the buttons*/
 .burger-button span{
   width: 30px;
-  border: 2px solid black;
-  background-color: black;
+  border: 2px solid rgb(90,90,90);
+  background-color: rgb(90,90,90);
   display: block;
   border-radius: 22px;
   transition: 1s;
 }
 .burger-button.active span{
-  border-color: grey;
-  background-color:black;
+  background-color:rgb(90,90,90);
 }
 
 .burger-top, .burger-bottom{
@@ -485,7 +502,6 @@ textarea{
   font-size: 20px;
   font-weight: 300;
   color: #7a7876;
-  font-family: 'Alegreya Sans SC', sans-serif;
   display:block;
   padding:1rem 2rem;
   text-align: center;
