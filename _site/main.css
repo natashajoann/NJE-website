@@ -311,7 +311,7 @@ footer{
   z-index:1;
   padding:2rem;
   border: 1px solid rgb(60,60,60);
-  background-color:#ebe2ca
+  background-color:#fde49f;
 }
 
 .contact-form{
@@ -354,6 +354,7 @@ textarea{
   width:85%;
   resize:none;
   padding-bottom: 5rem;
+  border: 1px solid black;
 }
 
 /* MEdia Queries */
@@ -375,10 +376,26 @@ textarea{
       padding: 3%;
     }
 
-    .blog-post{
-      order:-1;
+    .push-right{
+      margin-top:0;
+      margin-left:0;
+      margin-bottom:0;
     }
 
+    .push-left{
+      order:-1;
+      margin-top:0;
+      margin-left:0;
+      margin-bottom:0;
+    }
+
+    .about-me, .contribute{
+      padding:0;
+    }
+
+    .contribute-box{
+      order:-1;
+    }
 
   /* burger menu responsiveness */
   .mobile-menu{
