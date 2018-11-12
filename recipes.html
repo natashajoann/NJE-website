@@ -3,7 +3,27 @@ layout: default
 title:
 ---
 
-<section class="padded-5">
-  <h2> Recipes </h2>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-</section>
+
+
+  <section class="grid padded-5-10 features centered">
+
+    <div class="col-12">
+      <h2> Recipes </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    {% for post in site.posts limit:4 %}
+      <a href="{{post.url}}" class="col-6_sm-12 post-preview">
+        <div class="blog-loop-background" style="background-image:url({{post.featured_image}})">
+          <div class="overlay grid">
+            <p class="col-12-middle"> {{post.description}}</p>
+          </div>
+        </div>
+        <div class="blog-loop-info">
+          <h3> {{post.title}}</h3>
+          <p> by {{post.author}}</p>
+        </div>
+      </a>
+    {% endfor %}
+
+  </section>

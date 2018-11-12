@@ -1,5 +1,5 @@
 ---
-layout: post-3-grid
+layout: post-2-grid
 title: Colombian Ajiaco
 heading: Living to Tell the Tale
 description: This is where I will have a description

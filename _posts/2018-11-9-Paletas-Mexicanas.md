@@ -1,5 +1,5 @@
 ---
-layout: post-3-grid
+layout: post-2-grid
 title: Paletas Mexicanas
 heading: Paletas Mexicanas
 recipe: Spiced Strawberry Paleta

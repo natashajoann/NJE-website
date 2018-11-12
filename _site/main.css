@@ -55,6 +55,7 @@ img {
 
 .padded-1 { padding: 1%; }
 .padded-3 { padding: 3%; }
+.padded-4 { padding: 4%; }
 .padded-5 { padding: 5%; }
 .padded-10 {padding: 10%; }
 .padded-5-10 {padding: 5% 10%; }
@@ -81,6 +82,10 @@ a {
   /* text-transform: capitalize; */
   font-weight: normal;
   margin-bottom: 0.5em;
+}
+
+li {
+    margin-left: 2rem;
 }
 
 /* HEADER STUFF */
@@ -248,8 +253,18 @@ footer{
 
 /* blog post 2 grid formatting */
 
+.recipe-box1 h3 {
+  font-size: 1.4rem;
+  color: rgb(120,120,120);
+}
+
 .blog-layout2 h4, .blog-layout3 h4 {
-  text-decoration: underline;
+    font-weight: normal;
+    font-family: "Noto Sans Jp";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+    color: rgb(120,120,120);
 }
 
 #article-img{
@@ -260,23 +275,15 @@ footer{
 }
 
 .recipe-div{
-  padding:10px;
-  padding-left:2rem;
   position:relative;
   background-color: #fde49f;
 }
 
 /* IS THERE AN EASIER WAY OF HAVING THIS STICK TO THE BOTTOM? GOOGLE */
-.recipe-box1, .recipe-box2{
-  padding-top:6rem;
-}
 
-.recipe-box{
-  padding-left:2rem;
-}
 
-.blog-post{
-  padding: 10px 40px;
+.blog-post p {
+  margin-bottom: 1rem;
 }
 .ingredients{
   padding-bottom:10px;
@@ -286,14 +293,8 @@ footer{
 /* BLOGPOST LAYOUT 3  */
 .recipe-box2{
   background-color: #fde49f;
-  padding:10px;
-  padding-left:2rem;
 }
 
-
-.blog-post2 {
-  padding: 10px 20px;
-}
 
 /* ABOUT PAGE */
       /* about div section */
@@ -381,6 +382,22 @@ textarea{
   font-size: 1rem;
 }
 
+
+
+/* ----- People Page --------- */
+
+.people {
+  padding: 5%;
+}
+
+.people .author-img {
+  text-align: center;
+  border: 3px solid #cc6f6f;
+}
+
+.people .padded-2 {
+  padding: 2%;
+}
 
 
 /* MEdia Queries */
