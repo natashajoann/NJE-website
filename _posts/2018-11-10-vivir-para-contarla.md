@@ -1,7 +1,11 @@
 ---
 layout: post-2-grid
 title: Vivir Para Contarla
-description: This is where I will have a description
+description: >-
+  When she was 13 years old, Natasha left her home in Los Angeles and moved to
+  Bogota, Colombia. Now, 9 years later, Natasha takes us through her memories of
+  her time in Colombia and how she discovered a whole new culture, family, and
+  self-identity.
 featured_image: /uploads/eoninstagram-5dm42135.jpg
 author: Natasha Joann
 ingredients_html:
