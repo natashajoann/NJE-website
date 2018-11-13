@@ -3,7 +3,11 @@ layout: post-2-grid
 title: Paletas Mexicanas
 heading: Paletas Mexicanas
 recipe: Spiced Strawberry Paleta
-description: This is where I will have a description
+description: >-
+  When she was 13 years old, Natasha left her home in Los Angeles and moved to
+  Bogota, Colombia. Now, 9 years later, Natasha takes us through her memories of
+  her time in Colombia and how she discovered a whole new culture, family, and
+  self-identity.
 featured_image: /uploads/eoninstagram-5dm45479.jpg
 author: Natasha Joann
 ingredients_html:
