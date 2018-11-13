@@ -6,7 +6,7 @@ recipe: Chicken Empanadas
 description: >-
   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
   eu fugiat nulla pariatur.
-featured_image: /uploads/ronald-cuyan-434484-unsplash.jpg
+featured_image: /uploads/eoninstagram-5dm45062.jpg
 author: Natasha Joann
 ingredients_html: >-
   <ul><li>Duis aute irure</li><li>dolor in reprehenderit</li><li>in voluptate
