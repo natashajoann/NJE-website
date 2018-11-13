@@ -527,4 +527,10 @@ textarea{
 
 .burger-menu li{list-style:none}
 
+/* people's page */
+
+.author-switch{
+  order:-1;
+}
+
 }
