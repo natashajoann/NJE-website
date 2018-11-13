@@ -2,7 +2,7 @@
 layout: post-2-grid
 title: Sloppy Joes
 description: This is where I will have a description
-featured_image: /NashJoImages/food.jpg
+featured_image: /NashJoImages/EONINSTAGRAM5.png
 author: Natasha Joann
 ingredients_html:
 directions_html:

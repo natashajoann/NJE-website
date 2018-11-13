@@ -124,11 +124,11 @@ header{
 }
 
 .title-img {
-  background-image:url("/NashJoImages/fernando-prado-460051-unsplash.jpg");
+  background-image:url("/NashJoImages/agathe-marty-675151-unsplash.jpg");
   background-position:center;
   background-size:cover;
   width: 100%;
-  min-height: 87vh;
+  min-height: 74vh;
 }
 
 hr {
